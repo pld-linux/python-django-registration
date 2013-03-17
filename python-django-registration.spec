@@ -2,9 +2,9 @@
 %define		module		registration
 Summary:	Simple, portable, generic user-registration application for Django projects
 Summary(pl.UTF-8):	Prosta i przenośna aplikacja do rejestrowania użytkowników w projektach Django
-Name:		python-django_registration
+Name:		python-django-registration
 Version:	0.6
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://%{projectname}.googlecode.com/files/%{projectname}-%{version}.tar.gz
@@ -17,6 +17,8 @@ BuildRequires:	rpmbuild(macros) >= 1.219
 #%pyrequires_eq	python-libs
 %pyrequires_eq	python-modules
 Requires:	python-django >= 1.0
+Obsoletes:		python-django_registration < 0.6-2
+Provides:		python-django_registration = %{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

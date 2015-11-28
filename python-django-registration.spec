@@ -30,14 +30,11 @@ other dependencies.
 rm -r docs/_build/html/.buildinfo
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/registration/tests
 

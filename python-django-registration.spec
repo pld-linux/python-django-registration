@@ -3,7 +3,7 @@ Summary:	Simple, portable, generic user-registration application for Django proj
 Summary(pl.UTF-8):	Prosta i przenośna aplikacja do rejestrowania użytkowników w projektach Django
 Name:		python-%{module}
 Version:	0.8
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz

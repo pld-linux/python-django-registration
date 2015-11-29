@@ -10,7 +10,7 @@ Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}
 # Source0-md5:	d3e785858e0040a6c3201acd43409b2e
 URL:		https://bitbucket.org/ubernostrum/django-registration/
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-django >= 1.3
 Requires:	python-modules
 Provides:	python-django_registration = %{version}-%{release}
